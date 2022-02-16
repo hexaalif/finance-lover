@@ -1,0 +1,20 @@
+/* header title */
+.header-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* img style */
+img {
+  width: 550px;
+  height: 550px;
+}
+/* main section style */
+.main-section-shadow {
+  box-shadow: 5px 12px 10px rgba(128, 128, 128, 0.493);
+  margin-bottom: 100px;
+}
+/* form style */
+.income-header {
+  text-align: center;
+}

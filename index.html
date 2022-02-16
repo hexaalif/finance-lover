@@ -18,13 +18,36 @@
         <section>
             <div class="container">
                 <div class="row main-section-shadow">
-                    <div class="col-md-6 img-fluid">
+                    <!-- image of finance section -->
+                    <div class="col-md-6 col-12 img-fluid">
                         <img src="images/savings-calculation.jpg" alt="">
                     </div>
-                    <div class="col-md-6">
-                        <h4 class="income-header">Income</h4>
-                        <label for="Income">Income:</label>
-                        <input type="text" placeholder="Monthly income">
+                    <!-- form adding section -->
+                    <div class="col-md-6 col-12 form-section">
+                        <!-- income title & input -->
+                        <h4>Income</h4>
+                        <label for="Income">Income : </label>
+                        <input type="number" placeholder="Monthly income">
+                        <!-- Expenses title & input -->
+                        <h4>Expenses</h4>
+                        <div>
+                            <label for="Income">Food : </label>
+                        <input type="number" placeholder="Food Cost">
+                        </div> 
+                        <div>
+                            <label for="Income">Rent : </label>
+                        <input type="number" placeholder="Rent Cost">
+                        </div>
+                        <div>
+                            <label for="Income">Clothes : </label>
+                            <input type="number" placeholder="Clothes Cost">
+                        </div>
+                        <!-- calculate btn -->
+                        <button>Calculate</button>
+                        <div>
+                            <h5>Total Expenses: </h5>
+                            <h5>Balance: </h5>
+                        </div>
                     </div>
                 </div>
             </div>

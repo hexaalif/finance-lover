@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 /* header title */
 .header-title {
   text-align: center;
@@ -5,9 +8,9 @@
   margin-bottom: 30px;
 }
 /* img style */
-img {
-  width: 550px;
-  height: 550px;
+.img-content {
+  display: flex;
+  align-items: center;
 }
 /* main section style */
 .main-section-shadow {
@@ -15,6 +18,35 @@ img {
   margin-bottom: 100px;
 }
 /* form style */
+#income-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#expenses-title {
+  margin-bottom: 10px;
+}
 .form-section {
   text-align: center;
+}
+input {
+  background-color: rgba(192, 196, 201, 0.719);
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+button {
+  color: white;
+  font-weight: 600;
+  background-color: rgb(119, 119, 206);
+  border: none;
+  width: 30%;
+  padding: 7px;
+  border-radius: 5px;
+}
+#calculate-btn {
+  margin-bottom: 20px;
+}
+#remain-balance {
+  margin-bottom: 30px;
 }

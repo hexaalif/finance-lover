@@ -34,6 +34,8 @@ body {
 }
 label {
   font-weight: 600;
+  width: 70px;
+  display: inline-block;
 }
 input {
   background-color: rgba(192, 196, 201, 0.719);

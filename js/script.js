@@ -34,12 +34,6 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 
     expenses.innerText = expensesTotal;
 
-    // update balance
-    // function balanceUpdate(){
-    //     const balanceUpdate = balanceOutput;
-    //     return balanceUpdate;
-    // }
-
     const balance = document.getElementById('balance');
     const balanceText = balance.innerText;
     const balanceValue = parseFloat(balanceText);
@@ -48,6 +42,10 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     
     balance.innerText = balanceOutput;
 
+    if (myIncome < expensesTotal) {
+        alert("please valid input required");
+      }
+
     // error handling
     if(foodCost,rentCost,clotheCost <= 0 || isNaN(foodCost,rentCost,clotheCost)){
         alert('Number input is required');
@@ -55,11 +53,10 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
 });
 
 // save btn works
+
 document.getElementById('save-btn').addEventListener('click',function(){
     // income function call 
     let myIncome = myIncomeInput();
-    // bbalance funtion call
-    // let mybalance = balanceUpdate();
     // percentage calculation 
     const saveInput = document.getElementById('save-input').value;
     const saveValue = parseFloat(saveInput);
@@ -74,15 +71,15 @@ document.getElementById('save-btn').addEventListener('click',function(){
     SaveAmount.innerText = SaveAmountTotal;
 
     // Remaining balance
-    // const RemainBalance = document.getElementById('remains-balance');
-    // const RemainBalanceText = RemainBalance.innerText;
-    // const RemainBalanceValue = parseFloat(RemainBalanceText);
-    // const subtractValueRemainBalance = mybalance - SaveAmountTotal;
-    // const RemainBalanceTotal = subtractValueRemainBalance + RemainBalanceValue;
-
-    // RemainBalanceText.innerText = RemainBalanceTotal;
+    
     const remainingAmount = document.getElementById("remains-balance");
     const balanceOutput = document.getElementById("balance").innerText;
     const totalRemaining = balanceOutput - SaveAmountTotal;
     remainingAmount.innerText = totalRemaining;
+
+    if (balanceOutput < SaveAmountTotal) {
+        alert("input valid number!!");
+        remainingAmount.innerText = 0;
+      }
+    
 });
